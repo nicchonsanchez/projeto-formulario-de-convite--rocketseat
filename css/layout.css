@@ -81,7 +81,7 @@ main {
             all: unset;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
             width: 100%;
         }
         
@@ -270,6 +270,38 @@ main {
                 border-color: var(--brand-light);
                 outline: 1px solid var(--brand-light);
             }
+        }
+
+        .input-estilo .interruptor-box{
+            #estilo-escuro { display: none ;}
+            #estilo-escuro:checked + label {
+                .interruptor .bolinha {
+                    transform: translateX(0rem);
+                    background-color: var(--input-stroke);
+                }
+                span.escuro { display: block; }
+                span.claro { display: none; }
+            }
+            .interruptor {
+                transition: 3s;
+                border-radius: 999px;
+                border: 1px solid var(--input-stroke);
+                background-color: var(--input-base);
+                padding: .25rem;
+                width: 4rem;
+                margin-right: .75rem;
+
+                .bolinha {
+                    transition: 0.3s;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: var(--text-heading);
+                    border-radius: inherit;
+                    transform: translateX(1.9rem);
+                }
+            }
+
+            span.escuro { display: none; }
         }
     }
 

@@ -15,10 +15,20 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
 
     & > * {
         width: 50%;
     }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.grid-1-2 {
+    grid-template-columns: 1fr 2fr;
 }
 
 :root{
