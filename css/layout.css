@@ -351,6 +351,68 @@ main {
             }
             
         }
+
+        fieldset.checkbox-termos {
+            position: relative;
+            padding: 2.5rem 0 6rem;
+            border-top: 1px solid var(--input-stroke);
+
+            input[type="checkbox"] {
+                display: none;
+            }
+            
+            input:checked + label{
+                .check{
+                    border-color: var(--brand-light);
+                    svg { opacity: 1; }
+                }
+            }
+
+            a {
+                color: var(--brand-light);
+                font-weight: 600;
+            }
+
+            .check {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: .75rem;
+                padding: 1px;
+                border-radius: .25rem;
+                border: 1px solid var(--input-stroke);
+                background-color: var(--input-base);
+                
+                svg { opacity: 0; }
+
+                &:hover{
+                    border-color: var(--brand-light);
+                }
+            }
+
+            button.submit{
+                all: unset;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                gap: .75rem;
+                align-items: center;
+                background-color: var(--brand-dark);
+                padding: .75rem 1.25rem;
+                font-size: 1rem;
+                color: white;
+                border-radius: .5rem;
+
+                &:hover {
+                    background-color: var(--brand-light);
+                }
+
+                img{
+                    height: 1.25rem;
+                }
+            }
+        }
     }
 
     

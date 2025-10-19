@@ -278,6 +278,69 @@
 
                     </fieldset>
                     
+                    <fieldset>
+                        <legend>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.25C8.41421 1.25 8.75 1.58579 8.75 2V3.25H15.25V2C15.25 1.58579 15.5858 1.25 16 1.25C16.4142 1.25 16.75 1.58579 16.75 2V3.25H19C20.5188 3.25 21.75 4.48122 21.75 6V20C21.75 21.5188 20.5188 22.75 19 22.75H5C3.48122 22.75 2.25 21.5188 2.25 20V6C2.25 4.48122 3.48122 3.25 5 3.25H7.25V2C7.25 1.58579 7.58579 1.25 8 1.25ZM5 4.75C4.30964 4.75 3.75 5.30964 3.75 6V20C3.75 20.6904 4.30964 21.25 5 21.25H19C19.6904 21.25 20.25 20.6904 20.25 20V6C20.25 5.30964 19.6904 4.75 19 4.75H5ZM12 8.75C11.3096 8.75 10.75 9.30964 10.75 10C10.75 10.6904 11.3096 11.25 12 11.25C12.6904 11.25 13.25 10.6904 13.25 10C13.25 9.30964 12.6904 8.75 12 8.75ZM9.25 10C9.25 8.48122 10.4812 7.25 12 7.25C13.5188 7.25 14.75 8.48122 14.75 10C14.75 11.5188 13.5188 12.75 12 12.75C10.4812 12.75 9.25 11.5188 9.25 10ZM7.05546 16.0555C7.57118 15.5397 8.27065 15.25 9 15.25H15C15.7293 15.25 16.4288 15.5397 16.9445 16.0555C17.4603 16.5712 17.75 17.2707 17.75 18C17.75 18.4142 17.4142 18.75 17 18.75C16.5858 18.75 16.25 18.4142 16.25 18C16.25 17.6685 16.1183 17.3505 15.8839 17.1161C15.6495 16.8817 15.3315 16.75 15 16.75H9C8.66848 16.75 8.35054 16.8817 8.11612 17.1161C7.8817 17.3505 7.75 17.6685 7.75 18C7.75 18.4142 7.41421 18.75 7 18.75C6.58579 18.75 6.25 18.4142 6.25 18C6.25 17.2707 6.53973 16.5712 7.05546 16.0555Z" fill="#869198"/></svg>
+                            Dados para contato
+                        </legend>
+
+                        <div class="input-box">
+                            <label for="nome">Nome</label>
+                            <input required type="text" name="nome" id="nome" placeholder="Nome completo">
+                        </div>
+                        <!-- /.input-box -->
+
+                        <div class="grid">
+                            <div class="input-box">
+                                <label for="email">E-mail</label>
+                                <input required type="email" name="email" id="nome" placeholder="exemplo@email.com">
+                            </div>
+                            <!-- /.input-box -->
+                            <div class="input-box">
+                                <label for="telefone">Telefone</label>
+                                <input required type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999 ">
+                            </div>
+                            <!-- /.input-box -->
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="checkbox-termos">
+                        <div>
+                            <input type="checkbox" name="termos" id="termos" checked>
+                            
+                            <label for="termos">
+                                <div class="check">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z" fill="#59B2FF"/></svg>
+                                </div>
+                            Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="atualizacoes-email" id="atualizacoes-email">
+                            
+                            <label for="atualizacoes-email">
+                                <div class="check">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z" fill="#59B2FF"/></svg>
+                                </div>
+                            Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="atualizacoes-sms" id="atualizacoes-sms">
+                            
+                            <label for="atualizacoes-sms">
+                                <div class="check">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z" fill="#59B2FF"/></svg>
+                                </div>
+                            Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                        
+                        <button class="submit">
+                            <img src="./assets/icons/ticket.svg" alt="">
+                            Gerar convite
+                        </button>
+                    </fieldset>
+
                 </form>
             </div>
             <!-- /.main-container -->
