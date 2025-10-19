@@ -331,9 +331,6 @@ main {
                     .btn-selecionar {
                         border-color: var(--brand-light);
                     }
-                    img {
-                        filter: invert(70%) sepia(21%) saturate(2368%) hue-rotate(185deg) brightness(220%) contrast(101%);
-                    }
                 }
 
                 .btn-selecionar {
@@ -350,13 +347,6 @@ main {
                     color: white;
                     font-size: .875rem;
                     font-weight: 600;
-
-                    &:hover img {
-                        filter: invert(70%) sepia(21%) saturate(2368%) hue-rotate(185deg) brightness(220%) contrast(101%);
-                    }
-                }
-                img {
-                    height: 1rem;
                 }
             }
             
