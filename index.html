@@ -249,7 +249,7 @@
 
                         <div class="grid grid-1-2">
                             <div class="input-estilo input-box transparent">
-                                <label>Estilo</label>
+                                <label for="estilo-escuro">Estilo</label>
                                 <div class="interruptor-box">
                                     <input type="checkbox" name="estilo" id="estilo-escuro" checked>
                                     <label class="flex" for="estilo-escuro">
@@ -261,10 +261,22 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <div class="input-foto input-box transparent">
+                                <label for="foto-capa">Foto de capa</label>
+                                
+                                <div class="input-foto-box">
+                                    <label for="foto-capa" class="btn-selecionar">
+                                        <img src="./assets/icons/upload.svg" alt="Ícone Upload"> Selecionar
+                                    </label>
+                                    <input type="file" name="foto-capa" id="foto-capa">
+                                </div>
+                            </div>
                         </div>
                         <!-- /.grid grid-1-2 -->
 
                     </fieldset>
+                    
                 </form>
             </div>
             <!-- /.main-container -->

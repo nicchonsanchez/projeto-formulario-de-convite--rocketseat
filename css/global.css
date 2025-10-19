@@ -11,6 +11,10 @@ body {
     background-color: var(--shape-background);
 }
 
+input, label {
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
     flex-direction: row;
