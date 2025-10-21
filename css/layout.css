@@ -133,7 +133,7 @@ main {
                 border-color: var(--brand-light);
             }
             
-            &:invalid {
+            &:focus:invalid {
                 border-color: var(--danger);
             }
         }
@@ -148,7 +148,7 @@ main {
             height: 136px;
         }
 
-        .input-box:has(input:invalid)::after {
+        .input-box:focus:has(input:invalid)::after {
             content: "Error message";
             font-size: 0.75rem;
             color: var(--danger);
