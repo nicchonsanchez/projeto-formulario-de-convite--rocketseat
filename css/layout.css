@@ -132,10 +132,6 @@ main {
             {
                 border-color: var(--brand-light);
             }
-            
-            &:focus:invalid {
-                border-color: var(--danger);
-            }
         }
 
         input[type="text"] {
@@ -148,7 +144,16 @@ main {
             height: 136px;
         }
 
-        .input-box:focus:has(input:invalid)::after {
+        input[type="date"]{
+            position: relative;
+
+            &::-webkit-calendar-picker-indicator{
+                opacity: 0;
+            }
+        }
+
+        /* Mensagens de erro para os campos com REQUIRED que ficarem vazios */
+        .required-vazio::after {
             content: "Error message";
             font-size: 0.75rem;
             color: var(--danger);
@@ -157,13 +162,8 @@ main {
             padding-left: 20px;
             margin-top: -0.25rem;
         }
-
-        input[type="date"]{
-            position: relative;
-
-            &::-webkit-calendar-picker-indicator{
-                opacity: 0;
-            }
+        .required-vazio {
+            border-color: var(--danger);
         }
 
         .input-box .flex {

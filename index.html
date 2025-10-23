@@ -346,5 +346,25 @@
             <!-- /.main-container -->
         </main>
     </div>
+
+
+    <script>
+        // Seleciona todos os inputs com o atributo "required"
+        const requiredInputs = document.querySelectorAll('input[required], textarea[required], select[required]');
+
+        // Adiciona o listener ao perder o foco para colocar a classe .required-vazio que vai adicionar as mensagens de erro
+        requiredInputs.forEach(input => {
+        input.addEventListener("blur", function () {
+            const wrapper = this.closest(".input-box");
+            if(wrapper){
+                if (this.value === "") {
+                    wrapper.classList.add("required-vazio");
+                } else {
+                    wrapper.classList.remove("required-vazio");
+                }
+            }
+        });
+        });
+    </script>
 </body>
 </html>
